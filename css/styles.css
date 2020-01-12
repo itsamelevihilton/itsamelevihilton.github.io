@@ -1,0 +1,39 @@
+.hfcontainer {
+    background-color: navy;
+    border-radius: 5px;
+    color: silver;
+    padding: 10px;
+}
+.hfcontainer h1 {
+    margin-left: 30px;
+}
+.hfcontainer a {
+    color: silver;
+}
+.centered {
+    text-align: center;
+}
+body {
+    margin: auto;
+    max-width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info {
+    padding: 20px;
+}
+#mug {
+    margin: 5px;
+    width: 150px;
+    float: right;
+    clear: none;
+}
+#mug img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 silver, 0 6px 20px 0 grey;
+}
+footer {
+    font-size: smaller;
+}
+h1 {
+    font-size: 50px;
+}
