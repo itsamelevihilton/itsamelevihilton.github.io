@@ -9,12 +9,6 @@ nav ul li {
     float: left;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 nav ul li a {
     border: none;
     border-right: 1px solid rgba(0,0,0,0.3);

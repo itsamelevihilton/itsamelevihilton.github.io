@@ -5,10 +5,11 @@
 <meta name="description" content="A great weather site">
 <meta name="author" content="Levi Hilton">
 
-<title>Weather Rock Preston</title>
+<title>Weather Rock | Preston Idaho</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link href="css/small.css" rel="stylesheet">
 <link href="css/medium.css" rel="stylesheet">
@@ -17,36 +18,48 @@
      
 </head>
 <body>
-<!-- HEADER HERE -->
-	<header>
-        <h1>Weather Rock</h1>
-        <h2>Looking outside so you don't have to</h2>
+	<header >
+        <div>
+            <img id="logo" src="images/rock.svg">
+            <section>
+                <h1>Weather Rock</h1>
+                <h4>Looking outside so you don't have to</h4>
+            </section>
+        </div>
     </header>
     
     
-<!-- NAVIGATION HERE -->
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>   
         </ul>
     </nav>
     
     
-<!-- CONTENT HERE -->
     <main>
-        <h1>Products</h1>
-        <p>The page name shoud almost exactly match the menu item. </p>
+        <h1>Preston Idaho</h1>
+        <section>Hero w/ weather summary</section>
+        <section>5 Day Forecast</section>
+        <section>
+            <h3>Article</h3>
+            <h5>by author</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nisi aliquet ligula convallis posuere. Sed nec egestas magna, non lobortis mi. Integer vel faucibus turpis. Nam non orci rutrum, pellentesque dolor vitae, efficitur lectus. Vivamus ut nisi sodales, malesuada odio id, semper urna. Duis nisl ipsum, auctor nec dui sit amet, pellentesque accumsan mi. Proin congue tincidunt rutrum. Fusce feugiat non sem a aliquet. Duis vitae egestas est. Etiam dictum fermentum rutrum. In nec maximus lectus. Ut laoreet nunc leo, eget tempor arcu semper ac. Sed eu aliquam nulla. Integer condimentum magna id lacinia feugiat.</p>
+        </section>
     </main>
-    
-<!-- FOOTER HERE -->   
+      
+    <section>Contact Information</section>
     <footer>
-        <p>&copy; 201x &bull; Paul Cheney &bull; 123-555-6789</p>
+        <p>&copy;Weather Rock | Attributions | Levi Hilton</p>
+        <p id="date"></p>
     </footer>
     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
