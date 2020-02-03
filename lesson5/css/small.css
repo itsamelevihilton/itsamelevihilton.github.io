@@ -5,6 +5,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+alert {
+    display:block;
+    text-align: center;
+    padding: .5rem;
+    background-color: rgb(219, 212, 168);
+    width:100%;
+}
+alert > p {
+    margin: 0;
+}
+
 header {
     background-color: #635820;
     display: flex;
@@ -73,11 +84,76 @@ main section {
     padding: .7rem;
 }
 
+#hero {
+    position: relative;
+}
+
+#heroimg {
+    display:block;
+    width:100%;
+}
+
+#hero div {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: grid;
+    grid-template-columns: 7rem 4rem;
+}
+
+#hero div h4 {
+    grid-column-start: span 2;
+    justify-self: center;
+    margin: 0;
+}
+
+#hero div p {
+    margin: 0;
+}
+
+#hero div p.left {
+    justify-self:end;
+    margin-right: .4rem;
+}
+
+img.authorpic {
+    width:100%;
+    max-width: 640px;
+    float:right;
+}
+
 body > section {
     background-color: #8E8244;
     margin: 1rem 0 0 0;
     padding: .5rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
 }
+
+#contact > div {
+    flex: 1;
+}
+
+#contact img {
+    height: 1rem;
+    margin: 0 .2rem;
+}
+
+#contact img.socmed {
+    height: 2rem;
+}
+
+#contact p {
+    margin: 0;
+}
+#contactinfo{
+    margin-top:1rem;
+}
+
+/* #filler {
+    flex: .66fr
+} */
 
 footer {
     text-align: center;

@@ -18,6 +18,17 @@
 
     nav ul.hide {display: block;}
 
+    img.authorpic {
+        width:40%;
+    }
+
+    body > section {
+        flex-direction: row;
+    }
+    #contact > div {
+        margin-right: .4rem;
+    }
+
     .clearfix:after {
         content: "";
         display: table;
