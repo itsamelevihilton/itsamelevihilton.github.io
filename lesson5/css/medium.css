@@ -30,7 +30,7 @@
         width:40%;
     }
 
-    body > section {
+    #contact {
         flex-direction: row;
         height: 12rem;
     }

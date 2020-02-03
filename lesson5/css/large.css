@@ -16,7 +16,7 @@
         margin: .5rem 0;
     }
 
-    footer, body > section, main {
+    footer, #contact, main {
         width: 60rem;
         margin: auto;
     }
