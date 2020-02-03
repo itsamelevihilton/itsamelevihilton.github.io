@@ -32,10 +32,10 @@ header div {
 header section {
     text-align: center;
     margin:auto 0;
-    flex: .9fr;
+    flex: 0.9;
 }
 header img {
-    flex: .1fr;
+    flex: .1;
     margin:auto 0;
     display:block;
     height:4rem;
