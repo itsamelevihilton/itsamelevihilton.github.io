@@ -1,0 +1,90 @@
+body {
+    font-size: 14px;
+    background-color: #E4D68B;
+    color: #120F00;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #635820;
+    display: flex;
+    height: 6rem;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 .3rem #E4D68B;
+}
+header div {
+    display:flex;
+}
+
+header section {
+    text-align: center;
+    margin:auto 0;
+    flex: .9fr;
+}
+header img {
+    flex: .1fr;
+    margin:auto 0;
+    display:block;
+    height:4rem;
+}
+
+header h1, header h4 {
+    margin: 0;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav {
+    background-color: #383009;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #E4D68B;
+    border-top: 1px solid rgba(228,214,139,0.3);
+}
+
+nav ul li a:hover {background-color: rgba(18,15,0,0.4)}
+
+nav ul li.active a{background-color: rgba(18,15,0,0.2)}
+
+nav ul.hide {display: none;}
+
+main section {
+    background-color: #8E8244;
+    margin: .5rem .3rem;
+    padding: .7rem;
+}
+
+body > section {
+    background-color: #8E8244;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #383009;
+    color: #E4D68B;
+    padding: .5rem;
+}
+footer p {
+    margin: 0;
+}
