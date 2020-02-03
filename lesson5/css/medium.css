@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 42rem) {
+@media only screen and (min-width: 43rem) {
 
     body {
         font-size: 16px;
@@ -20,6 +20,10 @@
 
     #hero div {
         grid-template-columns: 7.3rem 4rem;
+    }
+
+    #forecast{
+        display: grid;
     }
 
     img.authorpic {

@@ -8,7 +8,7 @@ body {
 alert {
     display:block;
     text-align: center;
-    padding: .5rem;
+    padding: .5rem 0;
     background-color: rgb(219, 212, 168);
     width:100%;
 }
@@ -74,14 +74,22 @@ nav ul li a {
 
 nav ul li a:hover {background-color: rgba(18,15,0,0.4)}
 
-nav ul li.active a{background-color: rgba(18,15,0,0.2)}
+nav ul li.active a{
+    background-color: rgba(18,15,0,0.2);
+    font-weight: bold;
+}
 
 nav ul.hide {display: none;}
+
+main {
+    text-align: center;
+}
 
 main section {
     background-color: #8E8244;
     margin: .5rem .3rem;
     padding: .7rem;
+    text-align: start;
 }
 
 #hero {
@@ -116,6 +124,27 @@ main section {
 #hero div p.left {
     justify-self:end;
     margin-right: .4rem;
+}
+
+#forecast {
+    display: none;
+    justify-content: center;
+    grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
+}
+
+#forecast h2 {
+    grid-column-start: span 5;
+    justify-self: center;
+}
+
+#forecast h3 {
+    justify-self: center;
+}
+
+div.weather img {
+    display:block;
+    max-width: 7rem;
+    margin: 0 auto;
 }
 
 img.authorpic {
