@@ -147,6 +147,12 @@ div.weather img {
     margin: 0 auto;
 }
 
+div.temp {
+    font-size: 2.3rem;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
 img.authorpic {
     width:100%;
     max-width: 640px;
