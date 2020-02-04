@@ -1,0 +1,52 @@
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    max-width: 1000px;
+    background-color: navy;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 auto;
+    padding: .1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+main > section {
+    background-color: lightgray;
+    border: 1px solid navy;
+    border-radius: .3rem;
+    margin: .4rem;
+}
+
+section > section {
+    padding:.2rem;
+}
+
+div.title {
+    background-color: navy;
+    color: whitesmoke;
+    padding: .3rem;
+}
+
+section > img {
+    display: block;
+    width: 100%;
+}
+
+footer {
+    max-width: 1000px;
+    margin:0 auto;
+    text-align: center;
+    background-color: navy;
+    color: whitesmoke;
+    padding: 1em;
+}
