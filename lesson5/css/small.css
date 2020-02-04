@@ -23,7 +23,8 @@ header {
     padding: .5rem;
     align-items: center;
     justify-content: center;
-    text-shadow: 0 0 .3rem #E4D68B;
+    text-shadow: 0 0 .3rem #120F00;
+    color: #E4D68B;
 }
 header div {
     display:flex;
