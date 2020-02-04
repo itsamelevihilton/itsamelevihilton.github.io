@@ -37,6 +37,9 @@
     #contact > div {
         margin-right: .4rem;
     }
+    #map {
+        display: block;
+    }
 
     .clearfix:after {
         content: "";
