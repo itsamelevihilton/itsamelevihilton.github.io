@@ -27,11 +27,11 @@ main > section {
     margin: .4rem;
 }
 
-section > section {
+section > div {
     padding:.2rem;
 }
 
-div.title {
+h4.title {
     background-color: navy;
     color: whitesmoke;
     padding: .3rem;
