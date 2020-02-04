@@ -4,11 +4,11 @@ function toggleMenu() {
 var currentDate = new Date();
 var dayNames = ["Sunday","Monday", "Tuesday", "Wednesday", 
 "Thursday", "Friday", "Saturday"];
-document.getElementById("day1").innerText = dayNames[currentDate.getDay() + 1];
-document.getElementById("day2").innerText = dayNames[currentDate.getDay() + 2];
-document.getElementById("day3").innerText = dayNames[currentDate.getDay() + 3];
-document.getElementById("day4").innerText = dayNames[currentDate.getDay() + 4];
-document.getElementById("day5").innerText = dayNames[currentDate.getDay() + 5];
+document.getElementById("day1").innerText = dayNames[(currentDate.getDay() + 1) % 7];
+document.getElementById("day2").innerText = dayNames[(currentDate.getDay() + 2) % 7];
+document.getElementById("day3").innerText = dayNames[(currentDate.getDay() + 3) % 7];
+document.getElementById("day4").innerText = dayNames[(currentDate.getDay() + 4) % 7];
+document.getElementById("day5").innerText = dayNames[(currentDate.getDay() + 5) % 7];
 if (currentDate.getDay() != 5) {
     document.getElementById("alert").style.display = "none";
 }
