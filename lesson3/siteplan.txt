@@ -1,0 +1,2 @@
+Site Name: USWeatherRock $12/year
+Site Purpose: Show weather to people.
