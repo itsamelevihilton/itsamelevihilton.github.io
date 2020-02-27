@@ -4,7 +4,7 @@ WebFont.load({
           'Montserrat'
       ]
   }
-})
+});
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
