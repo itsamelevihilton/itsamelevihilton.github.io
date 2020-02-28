@@ -1,0 +1,24 @@
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    header {
+        height: 8rem;
+    }
+
+    header img {
+        height: 5rem;
+    }
+    
+    nav ul li a {padding: .6rem 1rem;}
+
+    main section {
+        margin: .5rem 0;
+    }
+
+    footer, #contact, main {
+        width: 60rem;
+        margin: auto;
+    }
+
+} /*end large */
