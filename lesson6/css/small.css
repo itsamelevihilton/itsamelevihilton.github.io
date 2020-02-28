@@ -108,8 +108,10 @@ main section {
     right: 3rem;
     display: grid;
     grid-template-columns: 6.5rem 3.5rem;
-    background-color: rgba(18, 15, 0, 0.205);
+    background-color: rgba(18, 15, 0, 0.5);
+    color: #E4D68B;
     padding: .5rem 0;
+    box-shadow: 0 0 .5rem .5rem rgba(18,15,0,.5) ;
 }
 
 #hero div h4 {

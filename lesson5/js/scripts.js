@@ -1,7 +1,6 @@
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-var currentDate = new Date();
 var dayNames = ["Sunday","Monday", "Tuesday", "Wednesday", 
 "Thursday", "Friday", "Saturday"];
 var day = new Date().getDay();
