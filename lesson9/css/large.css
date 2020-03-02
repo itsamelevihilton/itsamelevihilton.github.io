@@ -11,13 +11,17 @@
     }
     
     nav ul li a {padding: .6rem 1rem;}
+    
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     main section {
         margin: .5rem 0;
     }
 
     footer, #contact, main {
-        width: 60rem;
+        max-width: 70rem;
         margin: auto;
     }
 

@@ -22,6 +22,10 @@
     }
 
     nav ul.hide {display: block;}
+    
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
 
     #hero div {
         grid-template-columns: 7.3rem 4rem;
