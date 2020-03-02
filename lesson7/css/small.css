@@ -104,6 +104,10 @@ nav ul.hide {display: none;}
     height: 12rem;
 }
 
+.gallerypic .caption {
+    display: none;
+}
+
 main {
     text-align: center;
 }
