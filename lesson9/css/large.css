@@ -35,7 +35,7 @@
     .cards section:nth-of-type(1) {grid-row: 1/4;}
     .cards section:nth-of-type(2) {grid-row: 2/5;}
     .cards section:nth-of-type(3) {grid-row: 3/-1;}
-
+    
     .cards section img {
         width: 100%;
     }
