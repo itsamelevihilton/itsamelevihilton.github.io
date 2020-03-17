@@ -127,6 +127,23 @@ main section {
     text-align: start;
 }
 
+.cards section {
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin: .5rem 0;
+}
+.cards section div h2 {
+    margin:0;
+}
+.cards section div h4 {
+    margin-top: .2rem;
+}
+
+.cards section img {
+    display:block;
+    width: 100%;
+}
+
 #hero {
     position: relative;
 }
