@@ -7,7 +7,7 @@ fetch(requestURL)
     .then (function (jsonObject) {
         console.log(jsonObject);
         const towns = jsonObject['towns'];
-        const mytowns = ['Fish Haven', 'Preston', 'Soda Springs'];
+        const mytowns = ['Preston', 'Soda Springs', 'Fish Haven'];
 
         mytowns.forEach(mystring => {
             let townObj = towns.find(x => x.name === mystring)
