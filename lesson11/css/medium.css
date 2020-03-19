@@ -74,6 +74,7 @@
     }
 
     img.authorpic {
+        padding: .5rem;
         width:40%;
     }
 

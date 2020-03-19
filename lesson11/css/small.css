@@ -150,6 +150,9 @@ main section {
     padding: .7rem;
     text-align: start;
 }
+main a {
+    color:#E4D68B;
+}
 
 .cards section {
     text-align: center;
@@ -236,6 +239,7 @@ img.authorpic {
     width:100%;
     max-width: 640px;
     float:right;
+    padding-bottom: 1rem;
 }
 
 /*---------------FORM---------------*/
