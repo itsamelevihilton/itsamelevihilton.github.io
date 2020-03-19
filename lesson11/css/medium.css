@@ -10,6 +10,7 @@
     }
 
     #events h3 {
+        text-align: right;
         justify-self: right;
         margin: auto 0;
         padding-right:1rem;
@@ -76,6 +77,8 @@
     img.authorpic {
         padding: .5rem;
         width:40%;
+        display:block;
+        float: right;
     }
 
     #contact {

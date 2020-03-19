@@ -235,10 +235,14 @@ div.temp {
     margin-bottom: 1rem;
 }
 
+#article {
+    overflow: auto;
+}
+
 img.authorpic {
     width:100%;
+    display:inline-block;
     max-width: 640px;
-    float:right;
     padding-bottom: 1rem;
 }
 
