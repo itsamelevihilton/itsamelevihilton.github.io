@@ -58,8 +58,8 @@ imgMap.set(802, "cloudypartly.svg");
 imgMap.set(803, "cloudy.svg");
 imgMap.set(804, "cloudy.svg");
 
-const currentapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4736bd8dfb13dc2570877058ed9f85e9";
-const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4736bd8dfb13dc2570877058ed9f85e9";
+const currentapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=4736bd8dfb13dc2570877058ed9f85e9";
+const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=4736bd8dfb13dc2570877058ed9f85e9";
 fetch(currentapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
