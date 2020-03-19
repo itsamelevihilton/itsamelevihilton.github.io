@@ -1,0 +1,77 @@
+
+@media only screen and (min-width: 43rem) {
+
+    body {
+        font-size: 16px;
+    }
+    
+    nav button {display: none;}
+
+    nav ul {
+        width: 43rem;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+    }
+
+    nav ul.hide {display: block;}
+
+    .cards section{
+        display:flex;
+        padding: 0;
+    }
+    
+    .cards section:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .cards section div, .cards section img {
+        flex: 1;
+        width: 50%;
+    }
+
+    .cards section div {
+        margin:auto;
+    }
+    
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hero div {
+        grid-template-columns: 7.3rem 4rem;
+    }
+
+    #forecast{
+        display: grid;
+    }
+
+    img.authorpic {
+        width:40%;
+    }
+
+    #contact {
+        flex-direction: row;
+        height: 12rem;
+    }
+    #contact > div {
+        margin-right: .4rem;
+    }
+    #map {
+        display: block;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+} /*end medium */

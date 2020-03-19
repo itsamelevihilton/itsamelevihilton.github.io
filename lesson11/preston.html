@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A great weather site">
+<meta name="author" content="Levi Hilton">
+
+<title>Weather Rock | Preston Idaho</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+     
+</head>
+<body>
+    <div id="alert"><p>Saturday = Preston Pancakes in the Park!</p>  <p>9:00 a.m. Saturday in the city park.</p></div>
+	<header >
+        <div>
+            <img id="logo" src="images/rock.svg" alt="It's a rock">
+            <section>
+                <h1>Weather Rock</h1>
+                <h4>Looking outside so you don't have to</h4>
+            </section>
+        </div>
+    </header>
+    
+    
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>   
+        </ul>
+    </nav>
+    
+    
+    <main>
+        <h1>Preston Idaho</h1>
+        <section id="hero">
+            <img id="heroimg" src="./images/franklin1621.jpg" alt="franklin" sizes="100vw" srcset="./images/franklin688.jpg 688w, ./images/franklin1028.jpg 1028w, ./images/franklin1621.jpg 1621w, ./images/franklin4912.jpg 4912w, ">
+            <div class="weatherinfo">
+                <h4>Weather Summary</h4>
+                <p class="left">Currently:</p><p class="right" id="currently">Snowy</p>
+                <p class="left">High:</p><p class="right"><span id="high">26</span> &#7506;F</p>
+                <p class="left">Low:</p><p class="right"><span id="low">6</span> &#7506;F</p>
+                <p class="left">Wind Chill:</p><p class="right" id="windchill">1 &#7506;F</p>
+                <p class="left">Wind Speed:</p><p class="right"><span id="windspeed">5</span> mph</p>
+                <p class="left">Humidity:</p><p class="right" id="humidity">45%</p>
+            </div>
+        </section>
+        <div id="forecast">
+            <h2>5 Day Forecast</h2>
+            <!-- <h3 id="day1">Day1</h3>
+            <h3 id="day2">Day2</h3>
+            <h3 id="day3">Day3</h3>
+            <h3 id="day4">Day4</h3>
+            <h3 id="day5">Day5</h3>
+            <div id="weather1" class="weather"><img src="images/sunny.svg" alt="sunny"></div>
+            <div id="weather2" class="weather"><img src="images/snowy.svg" alt="snowy"></div>
+            <div id="weather3" class="weather"><img src="images/cloudy.svg" alt="cloudy"></div>
+            <div id="weather4" class="weather"><img src="images/rainy.svg" alt="rainy"></div>
+            <div id="weather5" class="weather"><img src="images/thunderstorm.svg" alt="thunderstorm"></div>
+            <div id="temp1" class="temp">34 &#7506;F</div>
+            <div id="temp2" class="temp">25 &#7506;F</div>
+            <div id="temp3" class="temp">28 &#7506;F</div>
+            <div id="temp4" class="temp">35 &#7506;F</div>
+            <div id="temp5" class="temp">34 &#7506;F</div> -->
+        </div>
+        <section>
+            <img class="authorpic" src="images/therock.jpg" alt="More rocks">
+            <h3>Weathered Meats</h3>
+            <h5><i>by Dwayne D. Johnson</i></h5>
+            <p>
+                Bacon ipsum dolor amet jerky ham hock meatloaf drumstick boudin meatball alcatra brisket picanha turkey salami beef. Pork bacon kielbasa drumstick, doner salami pancetta turducken ground round ball tip beef flank biltong cow. Tri-tip leberkas corned beef, chicken beef ribs jowl buffalo. Short loin doner frankfurter tri-tip. Fatback boudin salami, alcatra rump pastrami doner filet mignon chuck burgdoggen brisket buffalo short loin bacon. Turducken drumstick pork loin strip steak, capicola shank venison sirloin brisket chuck. Tongue prosciutto capicola beef ribs short loin t-bone pastrami pork loin chicken.
+            </p>
+            <p>
+                Shankle cupim flank salami doner jerky, tri-tip hamburger chicken beef ribs. Beef ribeye pork loin short ribs meatball hamburger shank salami cupim andouille drumstick fatback tenderloin landjaeger. Pastrami hamburger short ribs chuck. Ham jerky landjaeger filet mignon, brisket flank beef. Turducken short loin short ribs pork belly. Pork loin t-bone landjaeger chislic jowl, biltong burgdoggen corned beef venison doner meatloaf frankfurter tail picanha.
+            </p>
+        </section>
+    </main>
+      
+    <div id="contact">
+        <div id="map"></div>
+        <!-- <div id="filler"></div> -->
+        <div id="contactinfo">
+            <p><b>Weather Rock</b></p>
+            <p><a href="https://www.google.com/maps/place/30+N+1st+E,+Preston,+ID+83263/@42.0970234,-111.875773,17z/data=!3m1!4b1!4m5!3m4!1s0x8754f7e967e1ebc7:0x14469667cfe31546!8m2!3d42.0970234!4d-111.8735843" target="_blank"><img src="images/location.svg" alt="location link"></a>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p><img src="images/phone.svg" alt="phone">999.999.9999</p>
+            <p><img src="images/email.svg" alt="email">dwaynedjohnson@weatherrock.com</p>
+            <br>
+            <div>
+                <a  href="https://www.facebook.com" target="_blank"><img class="socmed" src="images/fb.svg" alt="facebook"></a>
+                <a  href="https://www.twitter.com" target="_blank"><img class="socmed" src="images/twitter.svg" alt="twitter"></a>
+                <a  href="https://www.pinterest.com" target="_blank"><img class="socmed" src="images/pinterest.svg" alt="pinterest"></a>
+                <a  href="https://www.instagram.com" target="_blank"><img class="socmed" src="images/ig.svg" alt="instagram"></a>
+                <a  href="https://www.whatsapp.com" target="_blank"><img class="socmed" src="images/whatsapp.svg" alt="whatsapp"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;Weather Rock | Weather Information Provided by <a href="https://openweathermap.org/">OpenWeatherMap</a> | Levi Hilton</p>
+        <p id="date"></p>
+    </footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/preston.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZlvUHOzSPXZdrEHpS5wpCnVtac8TxpY&callback=initMap"
+    async defer></script>
+</body>
+</html>
