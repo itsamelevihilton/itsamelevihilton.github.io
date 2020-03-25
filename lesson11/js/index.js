@@ -26,6 +26,10 @@ fetch(requestURL)
             population.textContent = 'Population: ' + townObj.currentPopulation;
             rainfall.textContent = 'Annual Rainfall: ' + townObj.averageRainfall;
             img.setAttribute('src', './images/' + townObj.photo);
+            let name = townObj.photo.slice(0, -4);
+            img.setAttribute('alt', townObj.photo);
+            img.setAttribute('sizes', '100vw');
+            img.setAttribute('srcset', './images/' + name + '363.jpg 363w, ./images/' + '508.jpg 508w, ./images/' + name + '684.jpg 684w');
         
             text.appendChild(h2);
             text.appendChild(h4);

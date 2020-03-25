@@ -16,6 +16,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .gallerypic:hover {
+        box-shadow: 0 0 .5rem .5rem rgba(18,15,0,.5);
+    }
+
     main section {
         margin: .5rem 0;
     }

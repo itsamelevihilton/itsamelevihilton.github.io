@@ -123,10 +123,7 @@ nav ul.hide {display: none;}
 .gallerypic {
     margin: 1rem auto;
     width: 20rem;
-}
-
-.gallerypic:hover {
-    box-shadow: 0 0 .5rem .5rem rgba(18,15,0,.5);
+    height: 12rem;
 }
 
 .gallerypic img {
