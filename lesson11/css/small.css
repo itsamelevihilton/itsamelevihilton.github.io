@@ -58,16 +58,16 @@ header div {
     display:flex;
 }
 
-header section {
-    text-align: center;
-    margin:auto 0;
-    flex: 0.9;
-}
 header img {
     flex: .1;
     margin:auto 0;
     display:block;
     height:4rem;
+}
+header section {
+    text-align: center;
+    margin:auto 0;
+    flex: 0.9;
 }
 
 header h1, header h4 {
@@ -100,7 +100,6 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     color: #E4D68B;
-    border-top: 1px solid rgba(228,214,139,0.3);
 }
 
 nav ul li a:hover {background-color: rgba(18,15,0,0.4)}

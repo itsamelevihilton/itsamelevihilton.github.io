@@ -1,0 +1,97 @@
+body {
+    background-color: $bodyBackground;
+    color: $darkTextColor;
+    font-family: $bodyFont;
+    font-size: 14px;
+}
+
+/*-----------------header------------------*/
+
+header {
+    background-color: $darkBrown;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    div {
+        display: flex;
+        img {
+            flex: .1;
+            display: block;
+            height: 6rem;
+            margin: auto 0;
+        }
+        div {
+            flex: .9;
+            text-align: center;
+            color: $lightTextColor;
+            width: 12rem;
+            margin: auto 0;
+            flex-direction: column;
+            text-shadow: 0 0 .3rem #001E22, 0 0 .7rem #CB4F45;
+            font-family: $headerFont;
+            h1, h4 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/*-------------------nav-------------------*/ 
+
+nav {
+    width: 100%;
+    background-color: $midBlue;
+    text-align: center;
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        padding: .2rem 2%;
+        color: $lightTextColor;
+        width:50%
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        li {
+            a {
+                display: block;
+                padding: .8rem 2%;
+                text-decoration: none;
+                font-family: $headerFont;
+                color: $lightTextColor;
+                border-top: 1px solid rgba(203,79,69,0.3);
+            }
+            a:hover {background-color: rgba(1,57,65,0.4)}
+        }
+        li.active a{
+            background-color: rgba(0,30,34,0.2);
+            font-weight: bold;
+        }
+    }
+    ul.hide {display: none;}
+}
+
+.waves {
+    display: block;
+    width: 90%;
+    margin:0 auto;
+}
+
+/*----------------footer-----------------*/ 
+
+footer {
+    text-align: center;
+    background-color: $midBrown;
+    width:100%;
+    padding: .5rem;
+    display:flex;
+    p {
+        margin: 0;
+    }
+    a {
+        color: $lightTextColor;
+    }
+}
