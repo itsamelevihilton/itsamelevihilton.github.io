@@ -3,6 +3,9 @@ body {
     color: $darkTextColor;
     font-family: $bodyFont;
     font-size: 14px;
+    h1{
+        margin: 0.67em auto;
+    }
 }
 
 /*-----------------header------------------*/
@@ -27,7 +30,7 @@ header {
             width: 12rem;
             margin: auto 0;
             flex-direction: column;
-            text-shadow: 0 0 .3rem #001E22, 0 0 .7rem #CB4F45;
+            text-shadow: 0 0 .3rem $darkTextColor, 0 0 .7rem $salmon;
             font-family: $headerFont;
             h1, h4 {
                 margin: 0;
@@ -74,34 +77,98 @@ nav {
     ul.hide {display: none;}
 }
 
-.waves {
-    display: block;
-    width: 90%;
-    margin: .5rem auto;
+/*-----------------------section---------------------------*/
+section {
+    max-width: 56rem;
+    margin: auto;
+    width:100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    color: $darkTextColor;
+    img {
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bigtitle {
+        display: none;
+    }
+}
+
+/*------------------------weather---------------------------*/
+#weather {
+    background-color: $weatherBackground;
+    color: $lightTextColor;
+    text-align: center;
+    padding: .5rem 0;
+    height: 11rem;
+    width: 100%;
+    img {
+        display: block;
+        height: 4rem;
+        margin: auto;
+    }
+    h2 {text-shadow: 0 0 .3rem #001E22; margin: .5rem; }
+    #current {
+        width: 16rem;
+        position: relative;
+        display: block;
+        grid-template-columns: .5fr 1fr;
+        margin:auto;
+        img {
+            position: absolute;
+            left: 2rem;
+        }
+        div {
+            position: absolute;
+            right: -1rem;
+            top: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: .5rem;
+            p {
+                margin: 0;
+            }
+            p:nth-of-type(even) { text-align: right; margin-right: .5rem;}
+            p:nth-of-type(odd) { text-align: left; margin-left: .5rem;}
+            p:nth-of-type(1) { 
+                text-align: center; 
+                grid-column: 1 / -1;
+                margin: 0;
+            }
+        }
+    }
+    #forecast { display: none; }
 }
 
 /*----------------footer-----------------*/ 
 
 footer {
     text-align: center;
-    background-color: $midBrown;
+    background-color: $midBlue;
     width:100%;
+    max-width: 56rem;
+    margin: auto;
     display:grid;
     padding: .5rem 0;
-    grid-template-columns: 1fr 1px 1fr .1px 1fr;
+    color: $bodyBackground;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
     p {
         margin: auto 0;
         padding: 0 .5rem;
     }
     p:nth-of-type(1) { text-align: right; }
     p:nth-of-type(2) { 
-        border-right: solid $darkTextColor 1px; 
+        border-right: solid $bodyBackground 1px; 
         height: 75%; 
         padding: 0; 
     }
     p:nth-of-type(3) { margin-bottom: .5rem; }
     p:nth-of-type(4) { 
-        border-right: solid $darkTextColor 1px; 
+        border-right: solid $bodyBackground 1px; 
         height: 75%; 
         padding: 0; 
     }
@@ -110,7 +177,7 @@ footer {
         grid-column: 1 / -1; 
         margin: 0 auto;
         padding-top: .25rem;
-        border-top: solid $darkTextColor 1px;
+        border-top: solid $bodyBackground 1px;
     }
     a {
         color: $lightTextColor;

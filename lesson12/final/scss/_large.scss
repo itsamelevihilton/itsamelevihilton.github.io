@@ -1,0 +1,36 @@
+
+
+section {
+    .bigtitle {
+        margin: auto;
+        display: block;
+        font-size: 4rem;
+        position: absolute;
+        box-shadow: 0 0 1rem 1rem $lightbgcolor;
+        text-shadow: 0 0 1rem $lightTextColor;
+        background-color: $lightbgcolor;
+    }
+}
+section:nth-of-type(1) {
+    .bigtitle {
+        top: 3rem;
+        left: 3rem;
+    }
+}
+section:nth-of-type(2) {
+    .bigtitle {
+        bottom: 3rem;
+        right: 3rem;
+    }
+}
+section:nth-of-type(3) {
+    .bigtitle {
+        top: 8rem;
+        left: 22rem;
+    }
+}
+
+footer {
+    p:nth-of-type(1) { text-align: center; }
+    p:nth-of-type(5) { text-align: center; }
+}
