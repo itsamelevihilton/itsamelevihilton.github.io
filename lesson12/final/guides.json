@@ -1,0 +1,29 @@
+{
+    "list": [
+        {
+          "name": "Charles Carmichael",
+          "photo": "carmichael.jpg",
+          "certification": "Class III",
+          "yearsExperience": 37,
+          "email": "carmichael@salmonriveradventures.com",
+          "biography": "Charles \"Chuck\" Carmichael has been at it a very very long time.  He knows the river like the back of his hand and is qualified to guide any of the offered activities."
+        },
+        {
+          "name": "Swan Ronson",
+          "photo": "ronson.jpg",
+          "certification": "Class II",
+          "yearsExperience": 4,
+          "email": "swanronson@salmonriveradventures.com",
+          "biography": "In addition to guiding fishing and rafting groups, Swan handles most of the background work to run the company.  For this reason, she can only guide a few groups each week."
+        },
+        {
+          "name": "Luke Skywalker",
+          "photo": "skywalker.jpg",
+          "certification": "Class I",
+          "yearsExperience": 2,
+          "email": "skywalker@salmonriveradventures.com",
+          "biography": "As the newest member of the Salmon River Adventures crew, he is only qualified to guide fishing tours.  He sure knows his stuff and is quickly learning the river and has a contagious energy."
+        }
+
+    ]
+}
