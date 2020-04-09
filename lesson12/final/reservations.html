@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Adventure is out There">
+<meta name="author" content="Levi Hilton">
+
+<title>Salmon River Adventures</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href="css/styles.min.css" rel="stylesheet">
+     
+</head>
+<body>
+	<header>
+        <div>
+            <img id="logo" src="img/logo.svg" alt="SRA logo">
+            <div>
+                <h1>Salmon River<br>Adventures</h1>
+                <h4>Adventure Is Out There!</h4>
+            </div>
+        </div>
+    </header>
+    
+    
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./guides.html">River Guides</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li class="active"><a href="#">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <section id="reserve">
+        <table>
+            <thead>
+                <caption>Salmon River Adventures</caption>
+                <tr><th>Activity</th><th>Length</th><th>Skill Level</th><th>Cost</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Fishing</td><td>8 hrs. w/ 30 minute lunch</td><td>Beginner</td><td>$300</td></tr>
+                <tr><td>Rafting</td><td>2 hrs.*</td><td>Beginner</td><td>$40/person min 3 people</td></tr>
+                <tr><td>Kayaking</td><td>1.5 hrs.*</td><td>Intermediate</td><td>$70/person</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="4">*Time dependent on weather</td></tr></tfoot>
+        </table>
+        <form method="get">
+            <fieldset>
+                <legend>Reservation details</legend>
+                <label class="txt">Full Name:*<input type="text" name="name" pattern="[A-Z a-z]{5,}" required></label>
+                <label class="txt">Email:*<input type="email" name="email" placeholder="example@email.com"></label>
+                <label class="txt">Phone:*<input type="tel" name="phone" required></label>
+                <label class="txt">Adventure:<select name="adventure">
+                    <option selected disabled>Select Adventure ...</option>
+                    <option value="fishing">Fishing</option>
+                    <option value="rafting">Rafting</option>
+                    <option value="kayaking">Kayaking</option>
+                </select></label>
+                <label class="txt">Start Date:<input type="date" name="date"></label>
+                <label class="txt">Additional information/comments:<br><textarea name="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Reserve Adventure" class="submitBtn">
+        </form>
+    </section>
+      
+    <footer>
+        <p>&copy;Salmon River Adventures</p>
+        <p class="footerBar"></p>
+        <p>Weather Information Provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p class="footerBar"></p>
+        <p>Levi Hilton</p>
+        <p id="date"></p>
+    </footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/contact.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZlvUHOzSPXZdrEHpS5wpCnVtac8TxpY&callback=initMap"
+    async defer></script>
+</body>
+</html>

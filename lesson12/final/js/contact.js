@@ -1,4 +1,3 @@
-
 var office = {lat: 45.418167, lng: -116.317760};
 var map;
 function initMap() {

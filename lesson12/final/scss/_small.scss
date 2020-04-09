@@ -89,7 +89,7 @@ nav {
 }
 
 /*-----------------------section---------------------------*/
-section {
+.imagecont {
     max-width: 56rem;
     width:100%;
     height: 250px;
@@ -147,6 +147,8 @@ section {
     color: $lightTextColor;
     height: auto;
     width: auto;
+    max-width: 56rem;
+    margin: 0 auto;
     text-align: left;
     h2 {text-shadow: 0 0 .3rem #001E22; margin-top: 0; }
     #weather {
@@ -179,15 +181,134 @@ section {
             }
         }
     }
-    #contactinfo {
-        margin: 1rem 1rem 1rem 0;
+}
+#contactinfo {
+    text-align: left;
+    margin: 0 1rem 1rem 1rem;
+    img {
+        height: 1rem;
+        margin-right: 1rem;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+#crew {
+    margin: .5rem;
+    width: 100%;
+    max-width: 56rem;
+    margin: auto;
+    color: $lightTextColor;
+    .guidecont {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem .25rem;
+        background-color: $weatherBackground;
         img {
-            height: 1rem;
-            margin-right: 1rem;
+            width: 200px;
+            display: block;
+            margin: 1rem auto 0 auto;
         }
-        p {
-            margin: 0;
+        .data {
+            margin: 1rem;
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-column-gap: 1rem;
+            h2 {
+                grid-column: 1 / -1;
+                margin-top: 0;
+            }
+            p {margin: 0;}
+            p:nth-of-type(odd) {
+                text-align: right;
+            }
+            p:nth-of-type(even) {
+                text-align: left;
+            }
         }
+    }
+}
+
+#contact {
+    background-color: $weatherBackground;
+    color: $lightTextColor;
+    display: block;
+    max-width: 56rem;
+    margin: 1rem .25rem;
+    display: grid;
+    h2 {
+        padding: 1rem 0;
+        margin: 0 auto;
+    }
+    #map {
+        width: 95%;
+        height: 15rem;
+        margin: 0 auto;
+        display: block;
+    }
+}
+#reserve {
+    max-width: 56rem;
+    margin: 1rem auto;
+    background-color: $weatherBackground;
+    color: $lightTextColor;
+    table {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    table, th, td {
+        border: 1px solid $lightTextColor;
+        border-collapse: collapse;
+    }
+    caption {
+        font-size: 2rem;
+    }
+}
+form {
+    padding:0 1rem 1rem 1rem;
+    text-align: left;
+    fieldset {
+        margin: 2rem 0 0 0;
+        border: 1px solid $bodyBackground;
+        padding: .5rem 2%;
+    }
+    legend {
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    label.txt {
+        display:block;
+        padding-top: 1rem;
+        font-size: .8rem;
+        input, select, textarea {
+            display: block;
+            font-size: 1rem;
+            border: solid 1px $salmon;
+            padding: .75rem;
+            color: $darkTextColor;
+            width: 100%;
+            max-width: 20rem;
+            background-color: $bodyBackground;
+        }
+        input::placeholder {
+            color: $salmon;
+        }
+        input:required {
+            border-left: red solid 6px;
+        }
+        input:required:valid {
+            border-left: green solid 6px;
+        }
+    }
+    input.submitBtn {
+        border: none;
+        background-color: $salmon;
+        color: $darkTextColor;
+        padding: .75rem 1.5rem;
+        margin: 1rem auto;
+        width: 100%;
+        max-width: 20rem;
     }
 }
 

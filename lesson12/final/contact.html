@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Adventure is out There">
+<meta name="author" content="Levi Hilton">
+
+<title>Salmon River Adventures</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href="css/styles.min.css" rel="stylesheet">
+     
+</head>
+<body>
+	<header>
+        <div>
+            <img id="logo" src="img/logo.svg" alt="SRA logo">
+            <div>
+                <h1>Salmon River<br>Adventures</h1>
+                <h4>Adventure Is Out There!</h4>
+            </div>
+        </div>
+    </header>
+    
+    
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./guides.html">River Guides</a></li>
+            <li class="active"><a href="#">Contact Us</a></li>
+            <li><a href="./reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <div class="mapcont">
+            <h2>Feel free to stop by our offices!</h2>
+            <div id="map"></div>
+        </div>
+        <form method="get">
+            <h2>Or send us an email here!</h2>
+            <label class="txt">Full Name:*<input type="text" name="name" pattern="[A-Z a-z]{5,}" required></label>
+            <label class="txt">Email:*<input type="email" name="email" placeholder="example@email.com" required></label>
+            <label class="txt">Phone:<input type="tel" name="phone"></label>
+            <label class="txt">Message:<br><textarea name="message"></textarea></label>
+            <input type="submit" value="Ask a question" class="submitBtn">
+        </form>
+        <div id="contactinfo">
+            <h2>Salmon River Adventures</h2>
+            <p><a href="https://www.google.com/maps/place/30+N+1st+E,+Preston,+ID+83263/@45.418167,-116.317760,17z/data=!3m1!4b1!4m5!3m4!1s0x8754f7e967e1ebc7:0x14469667cfe31546!8m2!3d42.0970234!4d-111.8735843" target="_blank"><img src="img/socialmedialight/location.svg" alt="location link"></a>3000 S Main Street</p>
+            <p>Riggins, ID 83549</p>
+            <br>
+            <p><img src="img/socialmedialight/phone.svg" alt="phone">999.999.9999</p>
+            <p><img src="img/socialmedialight/email.svg" alt="email">swanronson@salmonriveradventures.com</p>
+            <br>
+            <div>
+                <a  href="https://www.facebook.com" target="_blank"><img class="socmed" src="img/socialmedialight/fb.svg" alt="facebook"></a>
+                <a  href="https://www.twitter.com" target="_blank"><img class="socmed" src="img/socialmedialight/twitter.svg" alt="twitter"></a>
+                <a  href="https://www.pinterest.com" target="_blank"><img class="socmed" src="img/socialmedialight/pinterest.svg" alt="pinterest"></a>
+                <a  href="https://www.instagram.com" target="_blank"><img class="socmed" src="img/socialmedialight/ig.svg" alt="instagram"></a>
+                <a  href="https://www.whatsapp.com" target="_blank"><img class="socmed" src="img/socialmedialight/whatsapp.svg" alt="whatsapp"></a>
+            </div>
+        </div>
+    </section>
+      
+    <footer>
+        <p>&copy;Salmon River Adventures</p>
+        <p class="footerBar"></p>
+        <p>Weather Information Provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p class="footerBar"></p>
+        <p>Levi Hilton</p>
+        <p id="date"></p>
+    </footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/contact.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZlvUHOzSPXZdrEHpS5wpCnVtac8TxpY&callback=initMap"
+    async defer></script>
+</body>
+</html>

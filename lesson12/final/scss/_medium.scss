@@ -27,7 +27,7 @@ nav ul {
 }
 nav ul.hide {display: block;}
 
-section {
+.imagecont {
     height: 300px;
     .info {
         grid-template-rows: .5fr 1fr;
@@ -53,6 +53,19 @@ section {
                 right: -2rem;
             }
         }
+    }
+}
+
+#crew {
+    .guidecont {
+        flex-direction: row;
+        margin: 1rem auto;
+        img {
+            margin: 0;
+        }
+    }
+    .guidecont:nth-of-type(even) {
+        flex-direction: row-reverse;
     }
 }
 
